@@ -1,29 +1,11 @@
-# README #
-
-This README would normally document whatever steps are necessary to get your application up and running.
+# ONLINE BOOKSTORE #
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+This is an Online Book Store project for Object Oriented Programming II Course.
 
-### How do I get set up? ###
+### Contributers ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* 152120171073 Boburshoh Abdulov
+* 152120181108 Enes Kaşıkcı
+* 152120181109 Murat Musa Yalçın
