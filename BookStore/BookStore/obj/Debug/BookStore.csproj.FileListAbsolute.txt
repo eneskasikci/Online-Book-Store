@@ -9,3 +9,4 @@ C:\Users\eneSs\source\repos\online-book-store\BookStore\BookStore\obj\Debug\Book
 C:\Users\eneSs\source\repos\online-book-store\BookStore\BookStore\obj\Debug\BookStore.pdb
 C:\Users\eneSs\source\repos\online-book-store\BookStore\BookStore\obj\Debug\BookStore.Login.resources
 C:\Users\eneSs\source\repos\online-book-store\BookStore\BookStore\obj\Debug\BookStore.SignUp.resources
+C:\Users\eneSs\source\repos\online-book-store\BookStore\BookStore\obj\Debug\BookStore.Shop.resources
