@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.topPanel = new System.Windows.Forms.Panel();
-            this.closeButton = new System.Windows.Forms.PictureBox();
-            this.bookshopLBL = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.loginUserNameTBX = new System.Windows.Forms.TextBox();
@@ -42,49 +39,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.topPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
+            this.bookshopLBL = new System.Windows.Forms.Label();
+            this.closeButton = new System.Windows.Forms.PictureBox();
+            this.topPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
+            this.topPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // topPanel
-            // 
-            this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.topPanel.Controls.Add(this.closeButton);
-            this.topPanel.Controls.Add(this.bookshopLBL);
-            this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topPanel.Location = new System.Drawing.Point(0, 0);
-            this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(308, 68);
-            this.topPanel.TabIndex = 0;
-            this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
-            this.topPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseMove);
-            this.topPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseUp);
-            // 
-            // closeButton
-            // 
-            this.closeButton.Image = ((System.Drawing.Image)(resources.GetObject("closeButton.Image")));
-            this.closeButton.Location = new System.Drawing.Point(272, 0);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(33, 37);
-            this.closeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.closeButton.TabIndex = 7;
-            this.closeButton.TabStop = false;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // bookshopLBL
-            // 
-            this.bookshopLBL.AutoSize = true;
-            this.bookshopLBL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.bookshopLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookshopLBL.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bookshopLBL.Location = new System.Drawing.Point(96, 24);
-            this.bookshopLBL.Name = "bookshopLBL";
-            this.bookshopLBL.Size = new System.Drawing.Size(111, 25);
-            this.bookshopLBL.TabIndex = 2;
-            this.bookshopLBL.Text = "BookShop";
             // 
             // label1
             // 
@@ -189,6 +152,44 @@
             this.label2.Size = new System.Drawing.Size(138, 20);
             this.label2.TabIndex = 15;
             this.label2.Text = "Create an account.";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // bookshopLBL
+            // 
+            this.bookshopLBL.AutoSize = true;
+            this.bookshopLBL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.bookshopLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bookshopLBL.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bookshopLBL.Location = new System.Drawing.Point(99, 24);
+            this.bookshopLBL.Name = "bookshopLBL";
+            this.bookshopLBL.Size = new System.Drawing.Size(111, 25);
+            this.bookshopLBL.TabIndex = 2;
+            this.bookshopLBL.Text = "BookShop";
+            // 
+            // closeButton
+            // 
+            this.closeButton.Image = ((System.Drawing.Image)(resources.GetObject("closeButton.Image")));
+            this.closeButton.Location = new System.Drawing.Point(272, 0);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(33, 37);
+            this.closeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.closeButton.TabIndex = 7;
+            this.closeButton.TabStop = false;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // topPanel
+            // 
+            this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.topPanel.Controls.Add(this.closeButton);
+            this.topPanel.Controls.Add(this.bookshopLBL);
+            this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topPanel.Location = new System.Drawing.Point(0, 0);
+            this.topPanel.Name = "topPanel";
+            this.topPanel.Size = new System.Drawing.Size(308, 68);
+            this.topPanel.TabIndex = 0;
+            this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
+            this.topPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseMove);
+            this.topPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseUp);
             // 
             // Login
             // 
@@ -210,32 +211,31 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.Text = "Form1";
-            this.topPanel.ResumeLayout(false);
-            this.topPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();
+            this.topPanel.ResumeLayout(false);
+            this.topPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel topPanel;
-        private System.Windows.Forms.Label bookshopLBL;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox loginUserNameTBX;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox closeButton;
         private System.Windows.Forms.TextBox loginPasswordTBX;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label bookshopLBL;
+        private System.Windows.Forms.PictureBox closeButton;
+        private System.Windows.Forms.Panel topPanel;
     }
 }
 
