@@ -5,25 +5,32 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BookStore
 {
-    public partial class Login : Form
+    public partial class SignUp : Form
     {
-
         private bool mouseDown;
         private Point lastLocation;
-        public Login()
+        public SignUp()
         {
             InitializeComponent();
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void topPanel_MouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
             lastLocation = e.Location;
         }
+
         private void topPanel_MouseMove(object sender, MouseEventArgs e)
         {
             if (mouseDown)
@@ -34,20 +41,15 @@ namespace BookStore
                 this.Update();
             }
         }
+
         private void topPanel_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
+        private void signupSignupBTN_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            SignUp signupForm = new SignUp();
-            signupForm.Show();
+     
         }
     }
 }
