@@ -44,10 +44,50 @@ namespace BookStore
             this.Close();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void loginUserNameTBX_Enter(object sender, EventArgs e)
+        {
+            if (usernameTextBox.Text == "Username")
+                usernameTextBox.Text = "";
+        }
+
+        private void loginUserNameTBX_Leave(object sender, EventArgs e)
+        {
+            if (usernameTextBox.Text == "")
+                usernameTextBox.Text = "Username";
+        }
+
+        private void loginPasswordTBX_Enter(object sender, EventArgs e)
+        {
+            if (passwordTextBox.Text == "Password")
+                passwordTextBox.Text = "";
+        }
+
+        private void loginPasswordTBX_Leave(object sender, EventArgs e)
+        {
+            if (passwordTextBox.Text == "")
+                passwordTextBox.Text = "Password";
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            Shop shopForm = new Shop();
+            shopForm.ShowDialog();
+        }
+
+        private void closeButton_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void createButton_Click(object sender, EventArgs e)
         {
             SignUp signupForm = new SignUp();
-            signupForm.Show();
+            signupForm.ShowDialog();
         }
     }
 }
