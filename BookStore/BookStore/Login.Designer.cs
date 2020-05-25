@@ -32,18 +32,19 @@
             this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.bookshopLabel = new System.Windows.Forms.Label();
+            this.linePanel1 = new System.Windows.Forms.Panel();
+            this.linePanel2 = new System.Windows.Forms.Panel();
+            this.bookstoreLabel = new System.Windows.Forms.Label();
             this.topPanel = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Button();
-            this.createButton = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.createAccountButton = new System.Windows.Forms.Button();
+            this.passwordPictureBox = new System.Windows.Forms.PictureBox();
+            this.usernamePictureBox = new System.Windows.Forms.PictureBox();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
+            this.errorMessageLabel = new System.Windows.Forms.Label();
             this.topPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.passwordPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usernamePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +91,7 @@
             this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.passwordTextBox.Location = new System.Drawing.Point(63, 361);
+            this.passwordTextBox.Location = new System.Drawing.Point(63, 345);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(206, 20);
             this.passwordTextBox.TabIndex = 2;
@@ -99,39 +100,39 @@
             this.passwordTextBox.Enter += new System.EventHandler(this.loginPasswordTBX_Enter);
             this.passwordTextBox.Leave += new System.EventHandler(this.loginPasswordTBX_Leave);
             // 
-            // panel1
+            // linePanel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel1.Location = new System.Drawing.Point(36, 323);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(236, 1);
-            this.panel1.TabIndex = 13;
+            this.linePanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.linePanel1.Location = new System.Drawing.Point(36, 323);
+            this.linePanel1.Name = "linePanel1";
+            this.linePanel1.Size = new System.Drawing.Size(236, 1);
+            this.linePanel1.TabIndex = 13;
             // 
-            // panel2
+            // linePanel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel2.Location = new System.Drawing.Point(36, 388);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(236, 1);
-            this.panel2.TabIndex = 14;
+            this.linePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.linePanel2.Location = new System.Drawing.Point(36, 372);
+            this.linePanel2.Name = "linePanel2";
+            this.linePanel2.Size = new System.Drawing.Size(236, 1);
+            this.linePanel2.TabIndex = 14;
             // 
-            // bookshopLabel
+            // bookstoreLabel
             // 
-            this.bookshopLabel.AutoSize = true;
-            this.bookshopLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.bookshopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookshopLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bookshopLabel.Location = new System.Drawing.Point(99, 24);
-            this.bookshopLabel.Name = "bookshopLabel";
-            this.bookshopLabel.Size = new System.Drawing.Size(118, 25);
-            this.bookshopLabel.TabIndex = 0;
-            this.bookshopLabel.Text = "Book Store";
+            this.bookstoreLabel.AutoSize = true;
+            this.bookstoreLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.bookstoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bookstoreLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bookstoreLabel.Location = new System.Drawing.Point(99, 24);
+            this.bookstoreLabel.Name = "bookstoreLabel";
+            this.bookstoreLabel.Size = new System.Drawing.Size(118, 25);
+            this.bookstoreLabel.TabIndex = 0;
+            this.bookstoreLabel.Text = "Book Store";
             // 
             // topPanel
             // 
             this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.topPanel.Controls.Add(this.closeButton);
-            this.topPanel.Controls.Add(this.bookshopLabel);
+            this.topPanel.Controls.Add(this.bookstoreLabel);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
             this.topPanel.Name = "topPanel";
@@ -155,42 +156,42 @@
             this.closeButton.Text = "X";
             this.closeButton.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.closeButton.UseVisualStyleBackColor = false;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click_1);
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
-            // createButton
+            // createAccountButton
             // 
-            this.createButton.AutoSize = true;
-            this.createButton.FlatAppearance.BorderSize = 0;
-            this.createButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.createButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.createButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.createButton.Location = new System.Drawing.Point(124, 460);
-            this.createButton.Name = "createButton";
-            this.createButton.Size = new System.Drawing.Size(148, 32);
-            this.createButton.TabIndex = 15;
-            this.createButton.Text = "Create an account";
-            this.createButton.UseVisualStyleBackColor = true;
-            this.createButton.Click += new System.EventHandler(this.createButton_Click);
+            this.createAccountButton.AutoSize = true;
+            this.createAccountButton.FlatAppearance.BorderSize = 0;
+            this.createAccountButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.createAccountButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.createAccountButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.createAccountButton.Location = new System.Drawing.Point(124, 460);
+            this.createAccountButton.Name = "createAccountButton";
+            this.createAccountButton.Size = new System.Drawing.Size(148, 32);
+            this.createAccountButton.TabIndex = 15;
+            this.createAccountButton.Text = "Create an Account";
+            this.createAccountButton.UseVisualStyleBackColor = true;
+            this.createAccountButton.Click += new System.EventHandler(this.createButton_Click);
             // 
-            // pictureBox4
+            // passwordPictureBox
             // 
-            this.pictureBox4.Image = global::BookStore.Properties.Resources.icons8_password_50;
-            this.pictureBox4.Location = new System.Drawing.Point(36, 357);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
+            this.passwordPictureBox.Image = global::BookStore.Properties.Resources.icons8_password_50;
+            this.passwordPictureBox.Location = new System.Drawing.Point(36, 341);
+            this.passwordPictureBox.Name = "passwordPictureBox";
+            this.passwordPictureBox.Size = new System.Drawing.Size(25, 25);
+            this.passwordPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.passwordPictureBox.TabIndex = 12;
+            this.passwordPictureBox.TabStop = false;
             // 
-            // pictureBox3
+            // usernamePictureBox
             // 
-            this.pictureBox3.Image = global::BookStore.Properties.Resources.icons8_user_50;
-            this.pictureBox3.Location = new System.Drawing.Point(36, 292);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
+            this.usernamePictureBox.Image = global::BookStore.Properties.Resources.icons8_user_50;
+            this.usernamePictureBox.Location = new System.Drawing.Point(36, 292);
+            this.usernamePictureBox.Name = "usernamePictureBox";
+            this.usernamePictureBox.Size = new System.Drawing.Size(25, 25);
+            this.usernamePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.usernamePictureBox.TabIndex = 11;
+            this.usernamePictureBox.TabStop = false;
             // 
             // logoPictureBox
             // 
@@ -205,17 +206,27 @@
             this.logoPictureBox.TabIndex = 2;
             this.logoPictureBox.TabStop = false;
             // 
+            // errorMessageLabel
+            // 
+            this.errorMessageLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.errorMessageLabel.Location = new System.Drawing.Point(33, 383);
+            this.errorMessageLabel.Name = "errorMessageLabel";
+            this.errorMessageLabel.Size = new System.Drawing.Size(236, 23);
+            this.errorMessageLabel.TabIndex = 16;
+            this.errorMessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(308, 506);
-            this.Controls.Add(this.createButton);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.errorMessageLabel);
+            this.Controls.Add(this.createAccountButton);
+            this.Controls.Add(this.linePanel2);
+            this.Controls.Add(this.linePanel1);
+            this.Controls.Add(this.passwordPictureBox);
+            this.Controls.Add(this.usernamePictureBox);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.usernameTextBox);
@@ -228,8 +239,8 @@
             this.Text = "Form1";
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.passwordPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usernamePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -242,14 +253,15 @@
         private System.Windows.Forms.TextBox usernameTextBox;
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.TextBox passwordTextBox;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label bookshopLabel;
+        private System.Windows.Forms.PictureBox usernamePictureBox;
+        private System.Windows.Forms.PictureBox passwordPictureBox;
+        private System.Windows.Forms.Panel linePanel1;
+        private System.Windows.Forms.Panel linePanel2;
+        private System.Windows.Forms.Label bookstoreLabel;
         private System.Windows.Forms.Panel topPanel;
         private System.Windows.Forms.Button closeButton;
-        private System.Windows.Forms.Button createButton;
+        private System.Windows.Forms.Button createAccountButton;
+        private System.Windows.Forms.Label errorMessageLabel;
     }
 }
 

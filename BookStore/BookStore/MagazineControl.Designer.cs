@@ -32,31 +32,31 @@
             this.nameLabel = new System.Windows.Forms.Label();
             this.addtoCartButton = new System.Windows.Forms.Button();
             this.issueLabel = new System.Windows.Forms.Label();
-            this.bookPictureBox = new System.Windows.Forms.PictureBox();
             this.typeLabel = new System.Windows.Forms.Label();
             this.idLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.bookPictureBox)).BeginInit();
+            this.magazinePictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.magazinePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // priceLabel
             // 
             this.priceLabel.AutoSize = true;
             this.priceLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.priceLabel.Location = new System.Drawing.Point(156, 129);
+            this.priceLabel.Location = new System.Drawing.Point(156, 139);
             this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(44, 20);
+            this.priceLabel.Size = new System.Drawing.Size(48, 20);
             this.priceLabel.TabIndex = 13;
-            this.priceLabel.Text = "Price:";
+            this.priceLabel.Text = "Price: ";
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
             this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.nameLabel.Location = new System.Drawing.Point(156, 36);
+            this.nameLabel.Location = new System.Drawing.Point(156, 46);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(52, 20);
+            this.nameLabel.Size = new System.Drawing.Size(56, 20);
             this.nameLabel.TabIndex = 12;
-            this.nameLabel.Text = "Name:";
+            this.nameLabel.Text = "Name: ";
             // 
             // addtoCartButton
             // 
@@ -77,30 +77,21 @@
             // 
             this.issueLabel.AutoSize = true;
             this.issueLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.issueLabel.Location = new System.Drawing.Point(156, 67);
+            this.issueLabel.Location = new System.Drawing.Point(156, 77);
             this.issueLabel.Name = "issueLabel";
-            this.issueLabel.Size = new System.Drawing.Size(44, 20);
+            this.issueLabel.Size = new System.Drawing.Size(48, 20);
             this.issueLabel.TabIndex = 9;
-            this.issueLabel.Text = "Issue:";
-            // 
-            // bookPictureBox
-            // 
-            this.bookPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bookPictureBox.Location = new System.Drawing.Point(29, 36);
-            this.bookPictureBox.Name = "bookPictureBox";
-            this.bookPictureBox.Size = new System.Drawing.Size(110, 145);
-            this.bookPictureBox.TabIndex = 8;
-            this.bookPictureBox.TabStop = false;
+            this.issueLabel.Text = "Issue: ";
             // 
             // typeLabel
             // 
             this.typeLabel.AutoSize = true;
             this.typeLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.typeLabel.Location = new System.Drawing.Point(156, 98);
+            this.typeLabel.Location = new System.Drawing.Point(156, 108);
             this.typeLabel.Name = "typeLabel";
-            this.typeLabel.Size = new System.Drawing.Size(43, 20);
+            this.typeLabel.Size = new System.Drawing.Size(47, 20);
             this.typeLabel.TabIndex = 7;
-            this.typeLabel.Text = "Type:";
+            this.typeLabel.Text = "Type: ";
             // 
             // idLabel
             // 
@@ -112,21 +103,32 @@
             this.idLabel.TabIndex = 14;
             this.idLabel.Text = "#";
             // 
+            // magazinePictureBox
+            // 
+            this.magazinePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.magazinePictureBox.Location = new System.Drawing.Point(29, 36);
+            this.magazinePictureBox.Name = "magazinePictureBox";
+            this.magazinePictureBox.Size = new System.Drawing.Size(110, 145);
+            this.magazinePictureBox.TabIndex = 8;
+            this.magazinePictureBox.TabStop = false;
+            this.magazinePictureBox.MouseLeave += new System.EventHandler(this.magazinePictureBox_MouseLeave);
+            this.magazinePictureBox.MouseHover += new System.EventHandler(this.magazinePictureBox_MouseHover);
+            // 
             // MagazineControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.magazinePictureBox);
             this.Controls.Add(this.idLabel);
             this.Controls.Add(this.priceLabel);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.addtoCartButton);
             this.Controls.Add(this.issueLabel);
-            this.Controls.Add(this.bookPictureBox);
             this.Controls.Add(this.typeLabel);
             this.Name = "MagazineControl";
             this.Size = new System.Drawing.Size(387, 232);
-            ((System.ComponentModel.ISupportInitialize)(this.bookPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.magazinePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,7 +140,7 @@
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Button addtoCartButton;
         private System.Windows.Forms.Label issueLabel;
-        private System.Windows.Forms.PictureBox bookPictureBox;
+        private System.Windows.Forms.PictureBox magazinePictureBox;
         private System.Windows.Forms.Label typeLabel;
         private System.Windows.Forms.Label idLabel;
     }

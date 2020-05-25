@@ -29,108 +29,51 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.signupUsernameTextBox = new System.Windows.Forms.TextBox();
-            this.signupPasswordTextBox = new System.Windows.Forms.TextBox();
-            this.signupMailTextBox = new System.Windows.Forms.TextBox();
-            this.signupAddressTextBox = new System.Windows.Forms.TextBox();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.signupButton = new System.Windows.Forms.Button();
             this.topPanel = new System.Windows.Forms.Panel();
+            this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.closeButton = new System.Windows.Forms.Button();
-            this.bookshopLabel = new System.Windows.Forms.Label();
+            this.accountLabel = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.usernameLabel = new System.Windows.Forms.Label();
+            this.passwordLabel = new System.Windows.Forms.Label();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.emailLabel = new System.Windows.Forms.Label();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.addressLabel = new System.Windows.Forms.Label();
+            this.addressTextBox = new System.Windows.Forms.TextBox();
+            this.icon2Button = new System.Windows.Forms.Button();
+            this.icon1Button = new System.Windows.Forms.Button();
             this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel2.Location = new System.Drawing.Point(34, 194);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(236, 1);
-            this.panel2.TabIndex = 20;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel1.Location = new System.Drawing.Point(34, 129);
+            this.panel1.Location = new System.Drawing.Point(26, 174);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(236, 1);
+            this.panel1.Size = new System.Drawing.Size(295, 1);
             this.panel1.TabIndex = 19;
             // 
-            // panel3
+            // usernameTextBox
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel3.Location = new System.Drawing.Point(34, 266);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(236, 1);
-            this.panel3.TabIndex = 22;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel4.Location = new System.Drawing.Point(34, 394);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(236, 1);
-            this.panel4.TabIndex = 25;
-            // 
-            // signupUsernameTextBox
-            // 
-            this.signupUsernameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.signupUsernameTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signupUsernameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.signupUsernameTextBox.Location = new System.Drawing.Point(65, 98);
-            this.signupUsernameTextBox.Multiline = true;
-            this.signupUsernameTextBox.Name = "signupUsernameTextBox";
-            this.signupUsernameTextBox.Size = new System.Drawing.Size(205, 25);
-            this.signupUsernameTextBox.TabIndex = 26;
-            // 
-            // signupPasswordTextBox
-            // 
-            this.signupPasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.signupPasswordTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signupPasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.signupPasswordTextBox.Location = new System.Drawing.Point(65, 163);
-            this.signupPasswordTextBox.Multiline = true;
-            this.signupPasswordTextBox.Name = "signupPasswordTextBox";
-            this.signupPasswordTextBox.Size = new System.Drawing.Size(205, 25);
-            this.signupPasswordTextBox.TabIndex = 27;
-            this.signupPasswordTextBox.UseSystemPasswordChar = true;
-            // 
-            // signupMailTextBox
-            // 
-            this.signupMailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.signupMailTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signupMailTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.signupMailTextBox.Location = new System.Drawing.Point(65, 235);
-            this.signupMailTextBox.Multiline = true;
-            this.signupMailTextBox.Name = "signupMailTextBox";
-            this.signupMailTextBox.Size = new System.Drawing.Size(205, 25);
-            this.signupMailTextBox.TabIndex = 28;
-            // 
-            // signupAddressTextBox
-            // 
-            this.signupAddressTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.signupAddressTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signupAddressTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.signupAddressTextBox.Location = new System.Drawing.Point(65, 305);
-            this.signupAddressTextBox.Multiline = true;
-            this.signupAddressTextBox.Name = "signupAddressTextBox";
-            this.signupAddressTextBox.Size = new System.Drawing.Size(205, 77);
-            this.signupAddressTextBox.TabIndex = 29;
+            this.usernameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.usernameTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.usernameTextBox.Location = new System.Drawing.Point(123, 139);
+            this.usernameTextBox.MaxLength = 50;
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Size = new System.Drawing.Size(198, 27);
+            this.usernameTextBox.TabIndex = 1;
             // 
             // signupButton
             // 
@@ -138,26 +81,39 @@
             this.signupButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signupButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.signupButton.Location = new System.Drawing.Point(33, 430);
+            this.signupButton.Location = new System.Drawing.Point(112, 430);
             this.signupButton.Name = "signupButton";
-            this.signupButton.Size = new System.Drawing.Size(237, 42);
-            this.signupButton.TabIndex = 31;
-            this.signupButton.Text = "Sign Up";
+            this.signupButton.Size = new System.Drawing.Size(150, 42);
+            this.signupButton.TabIndex = 5;
+            this.signupButton.Text = "Create Account";
             this.signupButton.UseVisualStyleBackColor = false;
+            this.signupButton.Click += new System.EventHandler(this.signupButton_Click);
             // 
             // topPanel
             // 
             this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.topPanel.Controls.Add(this.logoPictureBox);
             this.topPanel.Controls.Add(this.closeButton);
-            this.topPanel.Controls.Add(this.bookshopLabel);
+            this.topPanel.Controls.Add(this.accountLabel);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(308, 68);
+            this.topPanel.Size = new System.Drawing.Size(349, 68);
             this.topPanel.TabIndex = 32;
             this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
             this.topPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseMove);
             this.topPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseUp);
+            // 
+            // logoPictureBox
+            // 
+            this.logoPictureBox.BackgroundImage = global::BookStore.Properties.Resources.book_store_icon;
+            this.logoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.logoPictureBox.Location = new System.Drawing.Point(26, 9);
+            this.logoPictureBox.Name = "logoPictureBox";
+            this.logoPictureBox.Size = new System.Drawing.Size(47, 46);
+            this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoPictureBox.TabIndex = 48;
+            this.logoPictureBox.TabStop = false;
             // 
             // closeButton
             // 
@@ -165,7 +121,7 @@
             this.closeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.closeButton.Location = new System.Drawing.Point(271, 9);
+            this.closeButton.Location = new System.Drawing.Point(312, 9);
             this.closeButton.Margin = new System.Windows.Forms.Padding(0);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(28, 28);
@@ -173,118 +129,229 @@
             this.closeButton.Text = "X";
             this.closeButton.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.closeButton.UseVisualStyleBackColor = false;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click_1);
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
-            // bookshopLabel
+            // accountLabel
             // 
-            this.bookshopLabel.AutoSize = true;
-            this.bookshopLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.bookshopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookshopLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bookshopLabel.Location = new System.Drawing.Point(99, 24);
-            this.bookshopLabel.Name = "bookshopLabel";
-            this.bookshopLabel.Size = new System.Drawing.Size(118, 25);
-            this.bookshopLabel.TabIndex = 2;
-            this.bookshopLabel.Text = "Book Store";
+            this.accountLabel.AutoSize = true;
+            this.accountLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.accountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accountLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.accountLabel.Location = new System.Drawing.Point(91, 22);
+            this.accountLabel.Name = "accountLabel";
+            this.accountLabel.Size = new System.Drawing.Size(190, 25);
+            this.accountLabel.TabIndex = 2;
+            this.accountLabel.Text = "Create an Account";
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // pictureBox2
+            // usernameLabel
             // 
-            this.pictureBox2.ErrorImage = global::BookStore.Properties.Resources.icons8_address_50;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(34, 305);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 24;
-            this.pictureBox2.TabStop = false;
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.usernameLabel.Location = new System.Drawing.Point(22, 141);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(84, 21);
+            this.usernameLabel.TabIndex = 33;
+            this.usernameLabel.Text = "Username:";
             // 
-            // pictureBox1
+            // passwordLabel
             // 
-            this.pictureBox1.Image = global::BookStore.Properties.Resources.icons8_important_mail_50;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 235);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
+            this.passwordLabel.AutoSize = true;
+            this.passwordLabel.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.passwordLabel.Location = new System.Drawing.Point(22, 187);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(79, 21);
+            this.passwordLabel.TabIndex = 38;
+            this.passwordLabel.Text = "Password:";
             // 
-            // pictureBox4
+            // passwordTextBox
             // 
-            this.pictureBox4.Image = global::BookStore.Properties.Resources.icons8_password_50;
-            this.pictureBox4.Location = new System.Drawing.Point(34, 163);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 18;
-            this.pictureBox4.TabStop = false;
+            this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.passwordTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.passwordTextBox.Location = new System.Drawing.Point(123, 185);
+            this.passwordTextBox.MaxLength = 50;
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(198, 27);
+            this.passwordTextBox.TabIndex = 2;
+            this.passwordTextBox.UseSystemPasswordChar = true;
             // 
-            // pictureBox3
+            // panel5
             // 
-            this.pictureBox3.Image = global::BookStore.Properties.Resources.icons8_user_50;
-            this.pictureBox3.Location = new System.Drawing.Point(34, 98);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel5.Location = new System.Drawing.Point(26, 220);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(295, 1);
+            this.panel5.TabIndex = 36;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.nameLabel.Location = new System.Drawing.Point(22, 95);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(55, 21);
+            this.nameLabel.TabIndex = 41;
+            this.nameLabel.Text = "Name:";
+            // 
+            // nameTextBox
+            // 
+            this.nameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nameTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.nameTextBox.Location = new System.Drawing.Point(123, 93);
+            this.nameTextBox.MaxLength = 50;
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(198, 27);
+            this.nameTextBox.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel2.Location = new System.Drawing.Point(26, 128);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(295, 1);
+            this.panel2.TabIndex = 39;
+            // 
+            // emailLabel
+            // 
+            this.emailLabel.AutoSize = true;
+            this.emailLabel.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.emailLabel.Location = new System.Drawing.Point(22, 233);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(51, 21);
+            this.emailLabel.TabIndex = 44;
+            this.emailLabel.Text = "Email:";
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.emailTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.emailTextBox.Location = new System.Drawing.Point(123, 231);
+            this.emailTextBox.MaxLength = 100;
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(198, 27);
+            this.emailTextBox.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel3.Location = new System.Drawing.Point(26, 266);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(295, 1);
+            this.panel3.TabIndex = 42;
+            // 
+            // addressLabel
+            // 
+            this.addressLabel.AutoSize = true;
+            this.addressLabel.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.addressLabel.Location = new System.Drawing.Point(22, 311);
+            this.addressLabel.Name = "addressLabel";
+            this.addressLabel.Size = new System.Drawing.Size(69, 21);
+            this.addressLabel.TabIndex = 47;
+            this.addressLabel.Text = "Address:";
+            // 
+            // addressTextBox
+            // 
+            this.addressTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addressTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.addressTextBox.Location = new System.Drawing.Point(123, 277);
+            this.addressTextBox.MaxLength = 200;
+            this.addressTextBox.Multiline = true;
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(198, 89);
+            this.addressTextBox.TabIndex = 4;
+            // 
+            // icon2Button
+            // 
+            this.icon2Button.BackgroundImage = global::BookStore.Properties.Resources.show2;
+            this.icon2Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.icon2Button.FlatAppearance.BorderSize = 0;
+            this.icon2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icon2Button.Location = new System.Drawing.Point(324, 187);
+            this.icon2Button.Name = "icon2Button";
+            this.icon2Button.Size = new System.Drawing.Size(22, 22);
+            this.icon2Button.TabIndex = 50;
+            this.icon2Button.UseVisualStyleBackColor = true;
+            this.icon2Button.Click += new System.EventHandler(this.icon2Button_Click);
+            // 
+            // icon1Button
+            // 
+            this.icon1Button.BackgroundImage = global::BookStore.Properties.Resources.show1;
+            this.icon1Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.icon1Button.FlatAppearance.BorderSize = 0;
+            this.icon1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icon1Button.Location = new System.Drawing.Point(324, 187);
+            this.icon1Button.Name = "icon1Button";
+            this.icon1Button.Size = new System.Drawing.Size(22, 22);
+            this.icon1Button.TabIndex = 49;
+            this.icon1Button.UseVisualStyleBackColor = true;
+            this.icon1Button.Click += new System.EventHandler(this.icon1Button_Click);
             // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(308, 506);
+            this.ClientSize = new System.Drawing.Size(349, 506);
+            this.Controls.Add(this.icon2Button);
+            this.Controls.Add(this.icon1Button);
+            this.Controls.Add(this.addressLabel);
+            this.Controls.Add(this.addressTextBox);
+            this.Controls.Add(this.emailLabel);
+            this.Controls.Add(this.emailTextBox);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.nameLabel);
+            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.passwordLabel);
+            this.Controls.Add(this.passwordTextBox);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.signupButton);
-            this.Controls.Add(this.signupAddressTextBox);
-            this.Controls.Add(this.signupMailTextBox);
-            this.Controls.Add(this.signupPasswordTextBox);
-            this.Controls.Add(this.signupUsernameTextBox);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUp";
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox signupUsernameTextBox;
-        private System.Windows.Forms.TextBox signupPasswordTextBox;
-        private System.Windows.Forms.TextBox signupMailTextBox;
-        private System.Windows.Forms.TextBox signupAddressTextBox;
+        private System.Windows.Forms.TextBox usernameTextBox;
         private System.Windows.Forms.Button signupButton;
         private System.Windows.Forms.Panel topPanel;
-        private System.Windows.Forms.Label bookshopLabel;
+        private System.Windows.Forms.Label accountLabel;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.Label usernameLabel;
+        private System.Windows.Forms.Label passwordLabel;
+        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label emailLabel;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label addressLabel;
+        private System.Windows.Forms.TextBox addressTextBox;
+        private System.Windows.Forms.PictureBox logoPictureBox;
+        private System.Windows.Forms.Button icon2Button;
+        private System.Windows.Forms.Button icon1Button;
     }
 }
