@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.authorLabel = new System.Windows.Forms.Label();
-            this.bookPictureBox = new System.Windows.Forms.PictureBox();
             this.isbnLabel = new System.Windows.Forms.Label();
             this.publisherLabel = new System.Windows.Forms.Label();
             this.addtoCartButton = new System.Windows.Forms.Button();
             this.nameLabel = new System.Windows.Forms.Label();
             this.priceLabel = new System.Windows.Forms.Label();
             this.idLabel = new System.Windows.Forms.Label();
+            this.pageLabel = new System.Windows.Forms.Label();
+            this.bookPictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bookPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,40 +44,31 @@
             // 
             this.authorLabel.AutoSize = true;
             this.authorLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.authorLabel.Location = new System.Drawing.Point(156, 98);
+            this.authorLabel.Location = new System.Drawing.Point(156, 92);
             this.authorLabel.Name = "authorLabel";
-            this.authorLabel.Size = new System.Drawing.Size(57, 20);
+            this.authorLabel.Size = new System.Drawing.Size(61, 20);
             this.authorLabel.TabIndex = 0;
-            this.authorLabel.Text = "Author:";
-            // 
-            // bookPictureBox
-            // 
-            this.bookPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bookPictureBox.Location = new System.Drawing.Point(29, 36);
-            this.bookPictureBox.Name = "bookPictureBox";
-            this.bookPictureBox.Size = new System.Drawing.Size(110, 145);
-            this.bookPictureBox.TabIndex = 1;
-            this.bookPictureBox.TabStop = false;
+            this.authorLabel.Text = "Author: ";
             // 
             // isbnLabel
             // 
             this.isbnLabel.AutoSize = true;
             this.isbnLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.isbnLabel.Location = new System.Drawing.Point(156, 67);
+            this.isbnLabel.Location = new System.Drawing.Point(156, 64);
             this.isbnLabel.Name = "isbnLabel";
-            this.isbnLabel.Size = new System.Drawing.Size(44, 20);
+            this.isbnLabel.Size = new System.Drawing.Size(48, 20);
             this.isbnLabel.TabIndex = 2;
-            this.isbnLabel.Text = "ISBN:";
+            this.isbnLabel.Text = "ISBN: ";
             // 
             // publisherLabel
             // 
             this.publisherLabel.AutoSize = true;
             this.publisherLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.publisherLabel.Location = new System.Drawing.Point(156, 129);
+            this.publisherLabel.Location = new System.Drawing.Point(156, 120);
             this.publisherLabel.Name = "publisherLabel";
-            this.publisherLabel.Size = new System.Drawing.Size(72, 20);
+            this.publisherLabel.Size = new System.Drawing.Size(76, 20);
             this.publisherLabel.TabIndex = 3;
-            this.publisherLabel.Text = "Publisher:";
+            this.publisherLabel.Text = "Publisher: ";
             // 
             // addtoCartButton
             // 
@@ -99,19 +91,19 @@
             this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.nameLabel.Location = new System.Drawing.Point(156, 36);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(52, 20);
+            this.nameLabel.Size = new System.Drawing.Size(56, 20);
             this.nameLabel.TabIndex = 5;
-            this.nameLabel.Text = "Name:";
+            this.nameLabel.Text = "Name: ";
             // 
             // priceLabel
             // 
             this.priceLabel.AutoSize = true;
             this.priceLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.priceLabel.Location = new System.Drawing.Point(156, 160);
+            this.priceLabel.Location = new System.Drawing.Point(156, 148);
             this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(44, 20);
+            this.priceLabel.Size = new System.Drawing.Size(48, 20);
             this.priceLabel.TabIndex = 6;
-            this.priceLabel.Text = "Price:";
+            this.priceLabel.Text = "Price: ";
             // 
             // idLabel
             // 
@@ -123,18 +115,40 @@
             this.idLabel.TabIndex = 15;
             this.idLabel.Text = "#";
             // 
+            // pageLabel
+            // 
+            this.pageLabel.AutoSize = true;
+            this.pageLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.pageLabel.Location = new System.Drawing.Point(156, 176);
+            this.pageLabel.Name = "pageLabel";
+            this.pageLabel.Size = new System.Drawing.Size(48, 20);
+            this.pageLabel.TabIndex = 16;
+            this.pageLabel.Text = "Page: ";
+            // 
+            // bookPictureBox
+            // 
+            this.bookPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bookPictureBox.Location = new System.Drawing.Point(29, 36);
+            this.bookPictureBox.Name = "bookPictureBox";
+            this.bookPictureBox.Size = new System.Drawing.Size(110, 161);
+            this.bookPictureBox.TabIndex = 17;
+            this.bookPictureBox.TabStop = false;
+            this.bookPictureBox.MouseLeave += new System.EventHandler(this.bookPictureBox_MouseLeave);
+            this.bookPictureBox.MouseHover += new System.EventHandler(this.bookPictureBox_MouseHover);
+            // 
             // BookControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.bookPictureBox);
+            this.Controls.Add(this.pageLabel);
             this.Controls.Add(this.idLabel);
             this.Controls.Add(this.priceLabel);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.addtoCartButton);
             this.Controls.Add(this.publisherLabel);
             this.Controls.Add(this.isbnLabel);
-            this.Controls.Add(this.bookPictureBox);
             this.Controls.Add(this.authorLabel);
             this.Name = "BookControl";
             this.Size = new System.Drawing.Size(387, 232);
@@ -147,12 +161,13 @@
         #endregion
 
         private System.Windows.Forms.Label authorLabel;
-        private System.Windows.Forms.PictureBox bookPictureBox;
         private System.Windows.Forms.Label isbnLabel;
         private System.Windows.Forms.Label publisherLabel;
         private System.Windows.Forms.Button addtoCartButton;
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Label priceLabel;
         private System.Windows.Forms.Label idLabel;
+        private System.Windows.Forms.Label pageLabel;
+        private System.Windows.Forms.PictureBox bookPictureBox;
     }
 }

@@ -12,31 +12,25 @@ namespace BookStore
 {
     public partial class Shop : Form
     {
-        public Shop()
+        public List<Book> booksList = new List<Book>();
+        public static List<Magazine> magazineList = new List<Magazine>();
+        public static List<MusicCD> musicCDList = new List<MusicCD>();
+
+        public int customerindex;
+        int X, Y, count;
+        public Shop(int logincustomerindex)
         {
             InitializeComponent();
-            
+            customerindex = logincustomerindex;
+            welcomeCLabel.Text = "Welcome " + Login.customerList[logincustomerindex].Username;
+            Util.LoadBooks(booksList);
+            Util.LoadMagazines(magazineList);
+            Util.LoadCDs(musicCDList);
         }
-        int X, Y, count;
 
         private void closeButton_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void addButton_Click(object sender, EventArgs e)
-        {
-            BookControl book = new BookControl();
-            count++;
-            book.Location = new System.Drawing.Point(X, Y);
-            if (count%2==0)
-            {
-                Y += 260;
-                X -= 840;
-            }
-            X += 420;
-            book.Size = new System.Drawing.Size(387, 232);
-            booksPanel.Controls.Add(book);
         }
 
         private void homepageButton_Click(object sender, EventArgs e)
@@ -57,6 +51,21 @@ namespace BookStore
             cdsPanel.Visible = false;
             shoppingCartPanel.Visible = false;
             homepagePanel.Visible = false;
+
+            foreach(Book book in booksList)
+            {
+                BookControl bookcontrol = new BookControl(book);
+                count++;
+                bookcontrol.Location = new System.Drawing.Point(X, Y);
+                if (count % 2 == 0)
+                {
+                    Y += 260;
+                    X -= 840;
+                }
+                X += 420;
+                bookcontrol.Size = new System.Drawing.Size(387, 232);
+                booksPanel.Controls.Add(bookcontrol);
+            }
             booksPanel.Visible = true;
         }
 
@@ -68,47 +77,22 @@ namespace BookStore
             shoppingCartPanel.Visible = false;
             homepagePanel.Visible = false;
             booksPanel.Visible = false;
+
+            foreach (Magazine magazine in magazineList)
+            {
+                MagazineControl magazinecontrol = new MagazineControl(magazine);
+                count++;
+                magazinecontrol.Location = new System.Drawing.Point(X, Y);
+                if (count % 2 == 0)
+                {
+                    Y += 260;
+                    X -= 840;
+                }
+                X += 420;
+                magazinecontrol.Size = new System.Drawing.Size(387, 232);
+                magazinesPanel.Controls.Add(magazinecontrol);
+            }
             magazinesPanel.Visible = true;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MagazineControl magazine = new MagazineControl();
-            count++;
-            magazine.Location = new System.Drawing.Point(X, Y);
-            if (count % 2 == 0)
-            {
-                Y += 260;
-                X -= 840;
-            }
-            X += 420;
-            magazine.Size = new System.Drawing.Size(387, 232);
-            magazinesPanel.Controls.Add(magazine);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            MusicCDControl CD = new MusicCDControl();
-            count++;
-            CD.Location = new System.Drawing.Point(X, Y);
-            if (count % 2 == 0)
-            {
-                Y += 260;
-                X -= 840;
-            }
-            X += 420;
-            CD.Size = new System.Drawing.Size(387, 232);
-            cdsPanel.Controls.Add(CD);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            ShoppingCartControl cart = new ShoppingCartControl();
-            count++;
-            cart.Location = new System.Drawing.Point(X, Y);
-            Y += 240;
-            cart.Size = new System.Drawing.Size(387, 232);
-            shoppingCartPanel.Controls.Add(cart);
         }
 
         private void cdButton_Click(object sender, EventArgs e)
@@ -119,6 +103,21 @@ namespace BookStore
             homepagePanel.Visible = false;
             booksPanel.Visible = false;
             magazinesPanel.Visible = false;
+
+            foreach (MusicCD musicCD in musicCDList)
+            {
+                MusicCDControl cdControl = new MusicCDControl(musicCD);
+                count++;
+                cdControl.Location = new System.Drawing.Point(X, Y);
+                if (count % 2 == 0)
+                {
+                    Y += 260;
+                    X -= 840;
+                }
+                X += 420;
+                cdControl.Size = new System.Drawing.Size(387, 232);
+                cdsPanel.Controls.Add(cdControl);
+            }
             cdsPanel.Visible = true;
         }
 

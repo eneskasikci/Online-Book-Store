@@ -10,13 +10,34 @@ namespace BookStore
     {
         private int customerID;
         private string name;
-        private string adress;
+        private string address;
         private string email;
         private string username;
         private string password;
 
-        public void printCustomerDetails() { }
-        public void saveCustomer() { }
-        public void printCustomerPurchases (){ }
+        public string printCustomerDetails()
+        {
+            return customerID + "," + name + "," + address + ","
+                    + email + "," + username + "," + password;
+        }
+        public void saveCustomer(int customerID, string name, string address, string email, string username, string password)
+        {
+            this.customerID = customerID;
+            this.name = name;
+            this.address = address;
+            this.email = email;
+            this.username = username;
+            this.password = password;
+        }
+        public void printCustomerPurchases()
+        {
+
+        }
+        public string Username { get { return username; }}
+
+        public bool IsValid(string username, string password)
+        {
+            return this.username.Equals(username) && this.password.Equals(password);
+        }
     }
 }

@@ -12,11 +12,12 @@ namespace BookStore
 {
     public partial class Login : Form
     {
-
+        public static List<Customer> customerList = new List<Customer>();
         private bool mouseDown;
         private Point lastLocation;
         public Login()
         {
+            Util.LoadCustomer(customerList);
             InitializeComponent();
         }
         private void topPanel_MouseDown(object sender, MouseEventArgs e)
@@ -37,16 +38,6 @@ namespace BookStore
         private void topPanel_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
-        }
-
-        private void closeButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void loginUserNameTBX_Enter(object sender, EventArgs e)
@@ -75,19 +66,35 @@ namespace BookStore
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            Shop shopForm = new Shop();
-            shopForm.ShowDialog();
-        }
-
-        private void closeButton_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
+            for (int i = 0; i < customerList.Count; i++)
+            {
+                Customer customer = customerList[i];
+                if (customer.IsValid(usernameTextBox.Text, passwordTextBox.Text))
+                {
+                    Shop shopform = new Shop(i);
+                    shopform.ShowDialog();
+                    errorMessageLabel.Text = "";
+                    usernameTextBox.Text = "Username";
+                    passwordTextBox.Text = "Password";
+                    return;
+                }
+            }
+            errorMessageLabel.ForeColor = Color.Red;
+            errorMessageLabel.Text = "Incorrect Username or Password";
         }
 
         private void createButton_Click(object sender, EventArgs e)
         {
             SignUp signupForm = new SignUp();
             signupForm.ShowDialog();
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Util.SaveCustomer(customerList);
+            DialogResult result = MessageBox.Show("Do you realy want to exit?", "Exit", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                this.Close();
         }
     }
 }

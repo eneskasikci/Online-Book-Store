@@ -97,6 +97,7 @@
     <Compile Include="BookControl.Designer.cs">
       <DependentUpon>BookControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Util.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,13 +153,58 @@
     <None Include="Images\icons8-password-50.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\icons8-important-mail-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\icons8-address-50.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Images\book-store-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\show1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\show2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\9780547928227.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\9780062316110.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\9780385545938.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\9780553418026.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\9781401958237.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CHIP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Forbes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\How It Works.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Istanbul Life.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Popular Science.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Curtain Call.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\1989.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Greatest Hits.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Kamikaze.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\The Man Comes Around.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

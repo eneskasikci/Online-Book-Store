@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BookStore
 {
-    abstract class Product
+    public abstract class Product
     {
-        private string name;
-        private int ID;
-        private float price;
+        protected int id;
+        protected string name;
+        protected decimal price;
         public abstract void printProperties();
     }
 }
