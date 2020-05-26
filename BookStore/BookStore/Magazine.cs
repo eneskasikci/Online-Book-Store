@@ -28,9 +28,6 @@ namespace BookStore
             }
         }
 
-        public int ID { get { return id; } }
-        public string Name { get { return name; } }
-        public decimal Price { get { return price; } }
         public string Issue { get { return issue; } }
         public MagType Type { get { return type; } }
 

@@ -29,11 +29,17 @@ namespace BookStore
             this.username = username;
             this.password = password;
         }
-        public void printCustomerPurchases()
+        public string printCustomerPurchases()
         {
-
+            string purchase = "";
+            foreach (var item in Shop.cart.ItemsToPurchase)
+            {
+                purchase += item.Product.Name + "   " + item.Quantity + Environment.NewLine;
+            }
+            return purchase;
         }
         public string Username { get { return username; }}
+        public int CustomerID { get { return customerID; } }
 
         public bool IsValid(string username, string password)
         {

@@ -63,9 +63,9 @@ namespace BookStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1989 {
+        internal static System.Drawing.Bitmap _2001 {
             get {
-                object obj = ResourceManager.GetObject("1989", resourceCulture);
+                object obj = ResourceManager.GetObject("2001", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace BookStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _9780062316110 {
+        internal static System.Drawing.Bitmap _2002 {
             get {
-                object obj = ResourceManager.GetObject("9780062316110", resourceCulture);
+                object obj = ResourceManager.GetObject("2002", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace BookStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _9780385545938 {
+        internal static System.Drawing.Bitmap _2003 {
             get {
-                object obj = ResourceManager.GetObject("9780385545938", resourceCulture);
+                object obj = ResourceManager.GetObject("2003", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace BookStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _9780547928227 {
+        internal static System.Drawing.Bitmap _2004 {
             get {
-                object obj = ResourceManager.GetObject("9780547928227", resourceCulture);
+                object obj = ResourceManager.GetObject("2004", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace BookStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _9780553418026 {
+        internal static System.Drawing.Bitmap _2005 {
             get {
-                object obj = ResourceManager.GetObject("9780553418026", resourceCulture);
+                object obj = ResourceManager.GetObject("2005", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,99 @@ namespace BookStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _9781401958237 {
+        internal static System.Drawing.Bitmap _3001 {
             get {
-                object obj = ResourceManager.GetObject("9781401958237", resourceCulture);
+                object obj = ResourceManager.GetObject("3001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3002 {
+            get {
+                object obj = ResourceManager.GetObject("3002", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3003 {
+            get {
+                object obj = ResourceManager.GetObject("3003", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3004 {
+            get {
+                object obj = ResourceManager.GetObject("3004", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3005 {
+            get {
+                object obj = ResourceManager.GetObject("3005", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5001 {
+            get {
+                object obj = ResourceManager.GetObject("5001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5002 {
+            get {
+                object obj = ResourceManager.GetObject("5002", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5003 {
+            get {
+                object obj = ResourceManager.GetObject("5003", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5004 {
+            get {
+                object obj = ResourceManager.GetObject("5004", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5005 {
+            get {
+                object obj = ResourceManager.GetObject("5005", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,56 +216,6 @@ namespace BookStore.Properties {
         internal static System.Drawing.Bitmap book_store_icon {
             get {
                 object obj = ResourceManager.GetObject("book-store-icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CHIP {
-            get {
-                object obj = ResourceManager.GetObject("CHIP", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Curtain_Call {
-            get {
-                object obj = ResourceManager.GetObject("Curtain Call", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Forbes {
-            get {
-                object obj = ResourceManager.GetObject("Forbes", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Greatest_Hits {
-            get {
-                object obj = ResourceManager.GetObject("Greatest Hits", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap How_It_Works {
-            get {
-                object obj = ResourceManager.GetObject("How It Works", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,36 +273,6 @@ namespace BookStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Istanbul_Life {
-            get {
-                object obj = ResourceManager.GetObject("Istanbul Life", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Kamikaze {
-            get {
-                object obj = ResourceManager.GetObject("Kamikaze", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Popular_Science {
-            get {
-                object obj = ResourceManager.GetObject("Popular Science", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap show1 {
             get {
                 object obj = ResourceManager.GetObject("show1", resourceCulture);
@@ -276,16 +286,6 @@ namespace BookStore.Properties {
         internal static System.Drawing.Bitmap show2 {
             get {
                 object obj = ResourceManager.GetObject("show2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap The_Man_Comes_Around {
-            get {
-                object obj = ResourceManager.GetObject("The Man Comes Around", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

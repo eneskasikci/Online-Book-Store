@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.topPanel = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bookshopLBL = new System.Windows.Forms.Label();
             this.booksPanel = new System.Windows.Forms.Panel();
             this.homepageButton = new System.Windows.Forms.Button();
@@ -41,14 +43,22 @@
             this.magazinesPanel = new System.Windows.Forms.Panel();
             this.cdsPanel = new System.Windows.Forms.Panel();
             this.shoppingCartPanel = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.summaryPanel = new System.Windows.Forms.Panel();
+            this.totalLabel = new System.Windows.Forms.Label();
+            this.productsLabel = new System.Windows.Forms.Label();
+            this.orderSummaryLabel = new System.Windows.Forms.Label();
+            this.ordertotalLabel = new System.Windows.Forms.Label();
+            this.myCartLabel = new System.Windows.Forms.Button();
             this.sidecolorButton = new System.Windows.Forms.Button();
             this.cartButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cartCountLabel = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.checkoutButton = new System.Windows.Forms.Button();
             this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.homepagePanel.SuspendLayout();
             this.shoppingCartPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.summaryPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // topPanel
@@ -78,6 +88,17 @@
             this.closeButton.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.closeButton.UseVisualStyleBackColor = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::BookStore.Properties.Resources.book_store_icon;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(30, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(47, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // bookshopLBL
             // 
@@ -197,22 +218,78 @@
             // 
             this.shoppingCartPanel.AutoScroll = true;
             this.shoppingCartPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.shoppingCartPanel.Controls.Add(this.label6);
+            this.shoppingCartPanel.Controls.Add(this.summaryPanel);
+            this.shoppingCartPanel.Controls.Add(this.myCartLabel);
             this.shoppingCartPanel.Location = new System.Drawing.Point(108, 131);
             this.shoppingCartPanel.Name = "shoppingCartPanel";
             this.shoppingCartPanel.Size = new System.Drawing.Size(980, 551);
             this.shoppingCartPanel.TabIndex = 14;
             this.shoppingCartPanel.Visible = false;
             // 
-            // label6
+            // summaryPanel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.label6.Location = new System.Drawing.Point(711, 107);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 25);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Total:";
+            this.summaryPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.summaryPanel.Controls.Add(this.checkoutButton);
+            this.summaryPanel.Controls.Add(this.totalLabel);
+            this.summaryPanel.Controls.Add(this.productsLabel);
+            this.summaryPanel.Controls.Add(this.orderSummaryLabel);
+            this.summaryPanel.Controls.Add(this.ordertotalLabel);
+            this.summaryPanel.Location = new System.Drawing.Point(607, 55);
+            this.summaryPanel.Name = "summaryPanel";
+            this.summaryPanel.Size = new System.Drawing.Size(307, 178);
+            this.summaryPanel.TabIndex = 25;
+            // 
+            // totalLabel
+            // 
+            this.totalLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.totalLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.totalLabel.Location = new System.Drawing.Point(142, 82);
+            this.totalLabel.Name = "totalLabel";
+            this.totalLabel.Size = new System.Drawing.Size(62, 25);
+            this.totalLabel.TabIndex = 28;
+            // 
+            // productsLabel
+            // 
+            this.productsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.productsLabel.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.productsLabel.Location = new System.Drawing.Point(24, 45);
+            this.productsLabel.Name = "productsLabel";
+            this.productsLabel.Size = new System.Drawing.Size(251, 28);
+            this.productsLabel.TabIndex = 27;
+            this.productsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // orderSummaryLabel
+            // 
+            this.orderSummaryLabel.AutoSize = true;
+            this.orderSummaryLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.orderSummaryLabel.Location = new System.Drawing.Point(75, 8);
+            this.orderSummaryLabel.Name = "orderSummaryLabel";
+            this.orderSummaryLabel.Size = new System.Drawing.Size(155, 25);
+            this.orderSummaryLabel.TabIndex = 26;
+            this.orderSummaryLabel.Text = "Order Summary";
+            // 
+            // ordertotalLabel
+            // 
+            this.ordertotalLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ordertotalLabel.AutoSize = true;
+            this.ordertotalLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.ordertotalLabel.Location = new System.Drawing.Point(23, 82);
+            this.ordertotalLabel.Name = "ordertotalLabel";
+            this.ordertotalLabel.Size = new System.Drawing.Size(122, 25);
+            this.ordertotalLabel.TabIndex = 22;
+            this.ordertotalLabel.Text = "Order Total: ";
+            // 
+            // myCartLabel
+            // 
+            this.myCartLabel.FlatAppearance.BorderSize = 0;
+            this.myCartLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myCartLabel.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.myCartLabel.Location = new System.Drawing.Point(108, 55);
+            this.myCartLabel.Name = "myCartLabel";
+            this.myCartLabel.Size = new System.Drawing.Size(319, 56);
+            this.myCartLabel.TabIndex = 24;
+            this.myCartLabel.Text = "My Shopping Cart";
+            this.myCartLabel.UseVisualStyleBackColor = true;
             // 
             // sidecolorButton
             // 
@@ -241,22 +318,45 @@
             this.cartButton.UseVisualStyleBackColor = true;
             this.cartButton.Click += new System.EventHandler(this.shopButton_Click);
             // 
-            // pictureBox1
+            // cartCountLabel
             // 
-            this.pictureBox1.BackgroundImage = global::BookStore.Properties.Resources.book_store_icon;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(30, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 46);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.cartCountLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.cartCountLabel.BackColor = System.Drawing.Color.ForestGreen;
+            this.cartCountLabel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.cartCountLabel.ForeColor = System.Drawing.Color.White;
+            this.cartCountLabel.Location = new System.Drawing.Point(1007, 77);
+            this.cartCountLabel.Name = "cartCountLabel";
+            this.cartCountLabel.Size = new System.Drawing.Size(25, 25);
+            this.cartCountLabel.TabIndex = 23;
+            this.cartCountLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // checkoutButton
+            // 
+            this.checkoutButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.checkoutButton.BackColor = System.Drawing.Color.ForestGreen;
+            this.checkoutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.checkoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkoutButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkoutButton.ForeColor = System.Drawing.Color.White;
+            this.checkoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkoutButton.Location = new System.Drawing.Point(87, 122);
+            this.checkoutButton.Name = "checkoutButton";
+            this.checkoutButton.Size = new System.Drawing.Size(143, 32);
+            this.checkoutButton.TabIndex = 29;
+            this.checkoutButton.Text = "CHECKOUT";
+            this.checkoutButton.UseVisualStyleBackColor = false;
+            this.checkoutButton.Click += new System.EventHandler(this.checkoutButton_Click);
             // 
             // Shop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 681);
+            this.Controls.Add(this.cartCountLabel);
             this.Controls.Add(this.sidecolorButton);
             this.Controls.Add(this.cartButton);
             this.Controls.Add(this.cdButton);
@@ -275,11 +375,12 @@
             this.Text = "Shop";
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.homepagePanel.ResumeLayout(false);
             this.homepagePanel.PerformLayout();
             this.shoppingCartPanel.ResumeLayout(false);
-            this.shoppingCartPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.summaryPanel.ResumeLayout(false);
+            this.summaryPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -302,6 +403,14 @@
         private System.Windows.Forms.Panel cdsPanel;
         private System.Windows.Forms.Panel shoppingCartPanel;
         private System.Windows.Forms.Button sidecolorButton;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label ordertotalLabel;
+        private System.Windows.Forms.Label cartCountLabel;
+        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Panel summaryPanel;
+        private System.Windows.Forms.Label orderSummaryLabel;
+        private System.Windows.Forms.Button myCartLabel;
+        private System.Windows.Forms.Label productsLabel;
+        private System.Windows.Forms.Label totalLabel;
+        private System.Windows.Forms.Button checkoutButton;
     }
 }

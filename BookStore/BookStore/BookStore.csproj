@@ -69,9 +69,20 @@
     <Compile Include="MusicCDControl.Designer.cs">
       <DependentUpon>MusicCDControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Shop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,16 +118,14 @@
     <EmbeddedResource Include="MusicCDControl.resx">
       <DependentUpon>MusicCDControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Shop.resx">
       <DependentUpon>Shop.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,49 +171,46 @@
     <None Include="Images\show2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\9780547928227.jpg" />
+    <None Include="Images\2005.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\9780062316110.jpg" />
+    <None Include="Images\2002.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\9780385545938.jpg" />
+    <None Include="Images\2004.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\9780553418026.jpg" />
+    <None Include="Images\2003.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\9781401958237.jpg" />
+    <None Include="Images\3004.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\CHIP.jpg" />
+    <None Include="Images\3003.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Forbes.jpg" />
+    <None Include="Images\3001.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\How It Works.jpg" />
+    <None Include="Images\3005.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Istanbul Life.jpg" />
+    <None Include="Images\3002.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Popular Science.jpg" />
+    <None Include="Images\5001.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Curtain Call.jpg" />
+    <None Include="Images\5002.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\1989.jpg" />
+    <None Include="Images\5004.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Greatest Hits.jpg" />
+    <None Include="Images\5005.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Kamikaze.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\The Man Comes Around.jpg" />
+    <None Include="Images\5003.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

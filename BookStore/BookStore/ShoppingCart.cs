@@ -7,20 +7,54 @@ using System.Threading.Tasks;
 
 namespace BookStore
 {
-    enum paymentType { cash = 1, creditcard = 2};
+    public enum paymentType { cash = 1, creditcard = 2};
     public class ShoppingCart
     {
         private int customerID;
-        private ArrayList itemsToPurchase;
-        private int paymentAmount;
+        private List<ItemToPurchase> itemsToPurchase = new List<ItemToPurchase>();
+        private decimal paymentAmount;
         private paymentType type;
 
-        public void printProducts() { }
-        public void addProduct() { }
-        public void removeProduct() { }
+        public ShoppingCart (int customerID)
+        {
+            this.customerID = customerID;
+        }
+
+        public List<ItemToPurchase> ItemsToPurchase { get { return itemsToPurchase; } set { itemsToPurchase = value; } }
+        public string printProducts()
+        {
+            string product="";
+            foreach (var item in itemsToPurchase)
+            {
+                product += item.Product.Name + "   " + item.Quantity + Environment.NewLine;
+            }
+            return product;
+        }
+
+        public void addProduct(ItemToPurchase item)
+        {
+            itemsToPurchase.Add(item);
+        }
+
+        public void removeProduct(int index)
+        {
+            itemsToPurchase.RemoveAt(index);
+        }
+
+        public decimal PaymentAmount { get { calculateTotalAmount(); return paymentAmount; } }
+        public int CustomerID { get {return customerID; } }
+        public paymentType Type { set {type =value; } }
+
+        public void calculateTotalAmount()
+        {
+            paymentAmount = 0;
+            foreach (var item in itemsToPurchase)
+                paymentAmount += item.Product.Price*item.Quantity;
+        }
+
         public void placeOrder() { }
         public void cancelOrder() { }
-        public void sendInvoicebySMS() { }
+        public void sendInvoicebySMS(){}
         public void sendInvoidcebyEmail() { }
     }
 }

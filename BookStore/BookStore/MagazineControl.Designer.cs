@@ -72,6 +72,7 @@
             this.addtoCartButton.TabIndex = 11;
             this.addtoCartButton.Text = "Add to Cart";
             this.addtoCartButton.UseVisualStyleBackColor = false;
+            this.addtoCartButton.Click += new System.EventHandler(this.addtoCartButton_Click);
             // 
             // issueLabel
             // 
