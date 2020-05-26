@@ -25,9 +25,6 @@ namespace BookStore
             this.page = int.Parse(page);
         }
 
-        public int ID { get { return id; }}
-        public string Name { get { return name; } }
-        public decimal Price { get { return price; } }
         public string ISBN { get { return isbn; } }
         public string Author { get { return author; } }
         public string Publisher { get { return publisher; } }

@@ -12,10 +12,11 @@ namespace BookStore
 {
     public partial class BookControl : UserControl
     {
+        Book thisbook;
         public BookControl(Book book)
         {
             InitializeComponent();
-
+            thisbook = book;
             idLabel.Text += book.ID;
             nameLabel.Text += book.Name;
             isbnLabel.Text += book.ISBN;
@@ -24,7 +25,7 @@ namespace BookStore
             priceLabel.Text += book.Price;
             pageLabel.Text += book.Page;
             bookPictureBox.BackgroundImage = 
-            (Bitmap)Properties.Resources.ResourceManager.GetObject(book.ISBN);
+            (Bitmap)Properties.Resources.ResourceManager.GetObject(book.ID.ToString());
         }
 
         private void bookPictureBox_MouseHover(object sender, EventArgs e)
@@ -37,6 +38,27 @@ namespace BookStore
         {
             bookPictureBox.Size = new System.Drawing.Size(110, 161);
             bookPictureBox.Location = new System.Drawing.Point(29, 36);
+        }
+
+        private void addtoCartButton_Click(object sender, EventArgs e)
+        {
+            int flag = 0;
+            foreach(ItemToPurchase item in Shop.cart.ItemsToPurchase)
+            {
+                if (item.Product.Name == thisbook.Name)
+                {
+                    MessageBox.Show("Item already exists in cart");flag = 1;
+                    break;
+                }
+            }
+
+            if (flag==0)
+            {
+                ItemToPurchase item = new ItemToPurchase();
+                item.Product = thisbook;
+                item.Quantity = 1;
+                Shop.cart.addProduct(item);
+            }
         }
     }
 }

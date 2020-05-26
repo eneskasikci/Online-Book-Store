@@ -84,6 +84,7 @@
             this.addtoCartButton.TabIndex = 4;
             this.addtoCartButton.Text = "Add to Cart";
             this.addtoCartButton.UseVisualStyleBackColor = false;
+            this.addtoCartButton.Click += new System.EventHandler(this.addtoCartButton_Click);
             // 
             // nameLabel
             // 
