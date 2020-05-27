@@ -26,20 +26,22 @@ namespace BookStore
 
         private void makeOrderButton_Click(object sender, EventArgs e)
         {
-            Shop.cart.placeOrder();
             if (creditcardRadioButton.Checked ==true)
-                Shop.cart.Type = paymentType.creditcard;
-            if (cashRadioButton.Checked == true)
-                Shop.cart.Type = paymentType.cash;
-            if (emailRadioButton.Checked == true)
             {
-                Shop.cart.sendInvoidcebyEmail();
-                MessageBox.Show("Your order is completed and Invoice sended to Email");
+                Shop.cart.placeOrder(paymentType.creditcard);
+                if (emailRadioButton.Checked == true)
+                    Shop.cart.sendInvoidcebyEmail();
+                else
+                    Shop.cart.sendInvoicebySMS();
             }
-            else
+                
+            if (cashRadioButton.Checked == true)
             {
-                Shop.cart.sendInvoicebySMS();
-                MessageBox.Show("Your order is completed and Invoice sended to SMS");
+                Shop.cart.placeOrder(paymentType.cash);
+                if (emailRadioButton.Checked == true)
+                    Shop.cart.sendInvoidcebyEmail();
+                else
+                    Shop.cart.sendInvoicebySMS();
             }
         }
     }

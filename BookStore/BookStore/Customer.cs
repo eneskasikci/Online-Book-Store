@@ -39,6 +39,7 @@ namespace BookStore
             return purchase;
         }
         public string Username { get { return username; }}
+        public string Email { get { return email; } }
         public int CustomerID { get { return customerID; } }
 
         public bool IsValid(string username, string password)

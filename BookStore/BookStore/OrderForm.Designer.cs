@@ -57,6 +57,7 @@
             // creditcardRadioButton
             // 
             this.creditcardRadioButton.AutoSize = true;
+            this.creditcardRadioButton.Checked = true;
             this.creditcardRadioButton.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.creditcardRadioButton.Location = new System.Drawing.Point(26, 32);
             this.creditcardRadioButton.Name = "creditcardRadioButton";
@@ -74,7 +75,6 @@
             this.cashRadioButton.Name = "cashRadioButton";
             this.cashRadioButton.Size = new System.Drawing.Size(62, 25);
             this.cashRadioButton.TabIndex = 33;
-            this.cashRadioButton.TabStop = true;
             this.cashRadioButton.Text = "Cash";
             this.cashRadioButton.UseVisualStyleBackColor = true;
             // 
@@ -147,6 +147,7 @@
             // emailRadioButton
             // 
             this.emailRadioButton.AutoSize = true;
+            this.emailRadioButton.Checked = true;
             this.emailRadioButton.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.emailRadioButton.Location = new System.Drawing.Point(26, 32);
             this.emailRadioButton.Name = "emailRadioButton";
@@ -164,7 +165,6 @@
             this.smsRadioButton.Name = "smsRadioButton";
             this.smsRadioButton.Size = new System.Drawing.Size(60, 25);
             this.smsRadioButton.TabIndex = 33;
-            this.smsRadioButton.TabStop = true;
             this.smsRadioButton.Text = "SMS";
             this.smsRadioButton.UseVisualStyleBackColor = true;
             // 
