@@ -4,6 +4,9 @@ using System.Text;
 using System.Security.Cryptography;
 using System.IO;
 using System.Windows.Forms;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using System.Net.Mail;
 
 namespace BookStore
 {
@@ -95,6 +98,54 @@ namespace BookStore
                     return true;
             }
             return false;
+        }
+
+        public static void SendSms(string msg, string number)
+        {
+            const string accountSid = "ACe78dee08a57ea35e2e4507fb8dbac202";
+            const string authToken = "86b14d10705beb72c9b79e58a1e1f292";
+            TwilioClient.Init(accountSid, authToken);
+            try
+            {
+                var message = MessageResource.Create(
+                    body: msg,
+                    from: new Twilio.Types.PhoneNumber("+18588341704"),
+                    to: new Twilio.Types.PhoneNumber(number)
+                );
+                Console.WriteLine(message.Sid);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occured while sending SMS ; " + ex.Message);
+            }
+
+        }
+        private static void SendEmail(string message, string subject, string mail)
+        {
+            SmtpClient smtp = new SmtpClient();
+            smtp.Host = "smtp-mail.outlook.com";
+            smtp.Port = 587;
+            smtp.EnableSsl = true;
+            smtp.Credentials = new System.Net.NetworkCredential("ooplab2_23@outlook.com", "BoburshohEnesMurat");
+            MailMessage eposta = new MailMessage();
+            eposta.From = new MailAddress("ooplab2_23@outlook.com");
+            eposta.To.Add(mail);
+            eposta.Subject = subject;
+            eposta.Body = message;
+            int sent = 0;
+            try
+            {
+                smtp.Send(eposta);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occured while sending email." + ex.Message);
+                sent = -1;
+            }
+            if (sent == 0)
+            {
+                MessageBox.Show("Email sent succesfully");
+            }
         }
     }
 }
