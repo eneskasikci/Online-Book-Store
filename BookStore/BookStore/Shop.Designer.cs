@@ -44,6 +44,7 @@
             this.cdsPanel = new System.Windows.Forms.Panel();
             this.shoppingCartPanel = new System.Windows.Forms.Panel();
             this.summaryPanel = new System.Windows.Forms.Panel();
+            this.checkoutButton = new System.Windows.Forms.Button();
             this.totalLabel = new System.Windows.Forms.Label();
             this.productsLabel = new System.Windows.Forms.Label();
             this.orderSummaryLabel = new System.Windows.Forms.Label();
@@ -53,12 +54,32 @@
             this.cartButton = new System.Windows.Forms.Button();
             this.cartCountLabel = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.checkoutButton = new System.Windows.Forms.Button();
+            this.bestsellerLabel = new System.Windows.Forms.Label();
+            this.bestsellerPictureBox = new System.Windows.Forms.PictureBox();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.priceLabel = new System.Windows.Forms.Label();
+            this.priceLabel2 = new System.Windows.Forms.Label();
+            this.nameLabel2 = new System.Windows.Forms.Label();
+            this.bestsellerPictureBox2 = new System.Windows.Forms.PictureBox();
+            this.priceLabel3 = new System.Windows.Forms.Label();
+            this.nameLabel3 = new System.Windows.Forms.Label();
+            this.bestsellerPictureBox3 = new System.Windows.Forms.PictureBox();
+            this.priceLabel4 = new System.Windows.Forms.Label();
+            this.nameLabel4 = new System.Windows.Forms.Label();
+            this.bestsellerPictureBox4 = new System.Windows.Forms.PictureBox();
+            this.priceLabel5 = new System.Windows.Forms.Label();
+            this.nameLabel5 = new System.Windows.Forms.Label();
+            this.bestsellerPictureBox5 = new System.Windows.Forms.PictureBox();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.homepagePanel.SuspendLayout();
             this.shoppingCartPanel.SuspendLayout();
             this.summaryPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bestsellerPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bestsellerPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bestsellerPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bestsellerPictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bestsellerPictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // topPanel
@@ -67,6 +88,7 @@
             this.topPanel.Controls.Add(this.closeButton);
             this.topPanel.Controls.Add(this.pictureBox1);
             this.topPanel.Controls.Add(this.bookshopLBL);
+            this.topPanel.Controls.Add(this.welcomeCLabel);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
             this.topPanel.Name = "topPanel";
@@ -178,7 +200,22 @@
             // 
             this.homepagePanel.AutoScroll = true;
             this.homepagePanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.homepagePanel.Controls.Add(this.welcomeCLabel);
+            this.homepagePanel.Controls.Add(this.priceLabel5);
+            this.homepagePanel.Controls.Add(this.nameLabel5);
+            this.homepagePanel.Controls.Add(this.bestsellerPictureBox5);
+            this.homepagePanel.Controls.Add(this.priceLabel4);
+            this.homepagePanel.Controls.Add(this.nameLabel4);
+            this.homepagePanel.Controls.Add(this.bestsellerPictureBox4);
+            this.homepagePanel.Controls.Add(this.priceLabel3);
+            this.homepagePanel.Controls.Add(this.nameLabel3);
+            this.homepagePanel.Controls.Add(this.bestsellerPictureBox3);
+            this.homepagePanel.Controls.Add(this.priceLabel2);
+            this.homepagePanel.Controls.Add(this.nameLabel2);
+            this.homepagePanel.Controls.Add(this.bestsellerPictureBox2);
+            this.homepagePanel.Controls.Add(this.priceLabel);
+            this.homepagePanel.Controls.Add(this.nameLabel);
+            this.homepagePanel.Controls.Add(this.bestsellerPictureBox);
+            this.homepagePanel.Controls.Add(this.bestsellerLabel);
             this.homepagePanel.Location = new System.Drawing.Point(108, 131);
             this.homepagePanel.Name = "homepagePanel";
             this.homepagePanel.Size = new System.Drawing.Size(980, 551);
@@ -188,7 +225,8 @@
             // 
             this.welcomeCLabel.AutoSize = true;
             this.welcomeCLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.welcomeCLabel.Location = new System.Drawing.Point(24, 19);
+            this.welcomeCLabel.ForeColor = System.Drawing.Color.White;
+            this.welcomeCLabel.Location = new System.Drawing.Point(951, 20);
             this.welcomeCLabel.Name = "welcomeCLabel";
             this.welcomeCLabel.Size = new System.Drawing.Size(93, 28);
             this.welcomeCLabel.TabIndex = 0;
@@ -238,6 +276,23 @@
             this.summaryPanel.Name = "summaryPanel";
             this.summaryPanel.Size = new System.Drawing.Size(307, 178);
             this.summaryPanel.TabIndex = 25;
+            // 
+            // checkoutButton
+            // 
+            this.checkoutButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.checkoutButton.BackColor = System.Drawing.Color.ForestGreen;
+            this.checkoutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.checkoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkoutButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkoutButton.ForeColor = System.Drawing.Color.White;
+            this.checkoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkoutButton.Location = new System.Drawing.Point(87, 122);
+            this.checkoutButton.Name = "checkoutButton";
+            this.checkoutButton.Size = new System.Drawing.Size(143, 32);
+            this.checkoutButton.TabIndex = 29;
+            this.checkoutButton.Text = "CHECKOUT";
+            this.checkoutButton.UseVisualStyleBackColor = false;
+            this.checkoutButton.Click += new System.EventHandler(this.checkoutButton_Click);
             // 
             // totalLabel
             // 
@@ -334,22 +389,165 @@
             // 
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // checkoutButton
+            // bestsellerLabel
             // 
-            this.checkoutButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.checkoutButton.BackColor = System.Drawing.Color.ForestGreen;
-            this.checkoutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.checkoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkoutButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkoutButton.ForeColor = System.Drawing.Color.White;
-            this.checkoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkoutButton.Location = new System.Drawing.Point(87, 122);
-            this.checkoutButton.Name = "checkoutButton";
-            this.checkoutButton.Size = new System.Drawing.Size(143, 32);
-            this.checkoutButton.TabIndex = 29;
-            this.checkoutButton.Text = "CHECKOUT";
-            this.checkoutButton.UseVisualStyleBackColor = false;
-            this.checkoutButton.Click += new System.EventHandler(this.checkoutButton_Click);
+            this.bestsellerLabel.AutoSize = true;
+            this.bestsellerLabel.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.bestsellerLabel.Location = new System.Drawing.Point(392, 74);
+            this.bestsellerLabel.Name = "bestsellerLabel";
+            this.bestsellerLabel.Size = new System.Drawing.Size(196, 37);
+            this.bestsellerLabel.TabIndex = 1;
+            this.bestsellerLabel.Text = "Top Bestseller";
+            // 
+            // bestsellerPictureBox
+            // 
+            this.bestsellerPictureBox.BackgroundImage = global::BookStore.Properties.Resources._2001;
+            this.bestsellerPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bestsellerPictureBox.Location = new System.Drawing.Point(94, 161);
+            this.bestsellerPictureBox.Name = "bestsellerPictureBox";
+            this.bestsellerPictureBox.Size = new System.Drawing.Size(133, 195);
+            this.bestsellerPictureBox.TabIndex = 2;
+            this.bestsellerPictureBox.TabStop = false;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.nameLabel.Location = new System.Drawing.Point(108, 364);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(105, 25);
+            this.nameLabel.TabIndex = 6;
+            this.nameLabel.Text = "The Hobbit";
+            // 
+            // priceLabel
+            // 
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.priceLabel.Location = new System.Drawing.Point(125, 393);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(70, 20);
+            this.priceLabel.TabIndex = 7;
+            this.priceLabel.Text = "14.99 TL";
+            // 
+            // priceLabel2
+            // 
+            this.priceLabel2.AutoSize = true;
+            this.priceLabel2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.priceLabel2.Location = new System.Drawing.Point(293, 393);
+            this.priceLabel2.Name = "priceLabel2";
+            this.priceLabel2.Size = new System.Drawing.Size(70, 20);
+            this.priceLabel2.TabIndex = 10;
+            this.priceLabel2.Text = "24.70 TL";
+            // 
+            // nameLabel2
+            // 
+            this.nameLabel2.AutoSize = true;
+            this.nameLabel2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.nameLabel2.Location = new System.Drawing.Point(286, 364);
+            this.nameLabel2.Name = "nameLabel2";
+            this.nameLabel2.Size = new System.Drawing.Size(84, 25);
+            this.nameLabel2.TabIndex = 9;
+            this.nameLabel2.Text = "Limitless";
+            // 
+            // bestsellerPictureBox2
+            // 
+            this.bestsellerPictureBox2.BackgroundImage = global::BookStore.Properties.Resources._2003;
+            this.bestsellerPictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bestsellerPictureBox2.Location = new System.Drawing.Point(262, 161);
+            this.bestsellerPictureBox2.Name = "bestsellerPictureBox2";
+            this.bestsellerPictureBox2.Size = new System.Drawing.Size(133, 195);
+            this.bestsellerPictureBox2.TabIndex = 8;
+            this.bestsellerPictureBox2.TabStop = false;
+            // 
+            // priceLabel3
+            // 
+            this.priceLabel3.AutoSize = true;
+            this.priceLabel3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.priceLabel3.Location = new System.Drawing.Point(461, 393);
+            this.priceLabel3.Name = "priceLabel3";
+            this.priceLabel3.Size = new System.Drawing.Size(70, 20);
+            this.priceLabel3.TabIndex = 13;
+            this.priceLabel3.Text = "15.64 TL";
+            // 
+            // nameLabel3
+            // 
+            this.nameLabel3.AutoSize = true;
+            this.nameLabel3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.nameLabel3.Location = new System.Drawing.Point(439, 364);
+            this.nameLabel3.Name = "nameLabel3";
+            this.nameLabel3.Size = new System.Drawing.Size(114, 25);
+            this.nameLabel3.TabIndex = 12;
+            this.nameLabel3.Text = "The Martian";
+            // 
+            // bestsellerPictureBox3
+            // 
+            this.bestsellerPictureBox3.BackgroundImage = global::BookStore.Properties.Resources._2004;
+            this.bestsellerPictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bestsellerPictureBox3.Location = new System.Drawing.Point(430, 161);
+            this.bestsellerPictureBox3.Name = "bestsellerPictureBox3";
+            this.bestsellerPictureBox3.Size = new System.Drawing.Size(133, 195);
+            this.bestsellerPictureBox3.TabIndex = 11;
+            this.bestsellerPictureBox3.TabStop = false;
+            // 
+            // priceLabel4
+            // 
+            this.priceLabel4.AutoSize = true;
+            this.priceLabel4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.priceLabel4.Location = new System.Drawing.Point(634, 393);
+            this.priceLabel4.Name = "priceLabel4";
+            this.priceLabel4.Size = new System.Drawing.Size(61, 20);
+            this.priceLabel4.TabIndex = 16;
+            this.priceLabel4.Text = "8.50 TL";
+            // 
+            // nameLabel4
+            // 
+            this.nameLabel4.AutoSize = true;
+            this.nameLabel4.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.nameLabel4.Location = new System.Drawing.Point(603, 364);
+            this.nameLabel4.Name = "nameLabel4";
+            this.nameLabel4.Size = new System.Drawing.Size(123, 25);
+            this.nameLabel4.TabIndex = 15;
+            this.nameLabel4.Text = "How It Works";
+            // 
+            // bestsellerPictureBox4
+            // 
+            this.bestsellerPictureBox4.BackgroundImage = global::BookStore.Properties.Resources._3001;
+            this.bestsellerPictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bestsellerPictureBox4.Location = new System.Drawing.Point(598, 161);
+            this.bestsellerPictureBox4.Name = "bestsellerPictureBox4";
+            this.bestsellerPictureBox4.Size = new System.Drawing.Size(133, 195);
+            this.bestsellerPictureBox4.TabIndex = 14;
+            this.bestsellerPictureBox4.TabStop = false;
+            // 
+            // priceLabel5
+            // 
+            this.priceLabel5.AutoSize = true;
+            this.priceLabel5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.priceLabel5.Location = new System.Drawing.Point(802, 393);
+            this.priceLabel5.Name = "priceLabel5";
+            this.priceLabel5.Size = new System.Drawing.Size(61, 20);
+            this.priceLabel5.TabIndex = 19;
+            this.priceLabel5.Text = "7.90 TL";
+            // 
+            // nameLabel5
+            // 
+            this.nameLabel5.AutoSize = true;
+            this.nameLabel5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.nameLabel5.Location = new System.Drawing.Point(759, 364);
+            this.nameLabel5.Name = "nameLabel5";
+            this.nameLabel5.Size = new System.Drawing.Size(146, 25);
+            this.nameLabel5.TabIndex = 18;
+            this.nameLabel5.Text = "Popular Science";
+            // 
+            // bestsellerPictureBox5
+            // 
+            this.bestsellerPictureBox5.BackgroundImage = global::BookStore.Properties.Resources._3002;
+            this.bestsellerPictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bestsellerPictureBox5.Location = new System.Drawing.Point(766, 161);
+            this.bestsellerPictureBox5.Name = "bestsellerPictureBox5";
+            this.bestsellerPictureBox5.Size = new System.Drawing.Size(133, 195);
+            this.bestsellerPictureBox5.TabIndex = 17;
+            this.bestsellerPictureBox5.TabStop = false;
             // 
             // Shop
             // 
@@ -364,11 +562,11 @@
             this.Controls.Add(this.booksButton);
             this.Controls.Add(this.homepageButton);
             this.Controls.Add(this.topPanel);
-            this.Controls.Add(this.shoppingCartPanel);
-            this.Controls.Add(this.booksPanel);
             this.Controls.Add(this.homepagePanel);
             this.Controls.Add(this.magazinesPanel);
             this.Controls.Add(this.cdsPanel);
+            this.Controls.Add(this.shoppingCartPanel);
+            this.Controls.Add(this.booksPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Shop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -381,6 +579,11 @@
             this.shoppingCartPanel.ResumeLayout(false);
             this.summaryPanel.ResumeLayout(false);
             this.summaryPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bestsellerPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bestsellerPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bestsellerPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bestsellerPictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bestsellerPictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -412,5 +615,21 @@
         private System.Windows.Forms.Label productsLabel;
         private System.Windows.Forms.Label totalLabel;
         private System.Windows.Forms.Button checkoutButton;
+        private System.Windows.Forms.PictureBox bestsellerPictureBox;
+        private System.Windows.Forms.Label bestsellerLabel;
+        private System.Windows.Forms.Label priceLabel;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Label priceLabel5;
+        private System.Windows.Forms.Label nameLabel5;
+        private System.Windows.Forms.PictureBox bestsellerPictureBox5;
+        private System.Windows.Forms.Label priceLabel4;
+        private System.Windows.Forms.Label nameLabel4;
+        private System.Windows.Forms.PictureBox bestsellerPictureBox4;
+        private System.Windows.Forms.Label priceLabel3;
+        private System.Windows.Forms.Label nameLabel3;
+        private System.Windows.Forms.PictureBox bestsellerPictureBox3;
+        private System.Windows.Forms.Label priceLabel2;
+        private System.Windows.Forms.Label nameLabel2;
+        private System.Windows.Forms.PictureBox bestsellerPictureBox2;
     }
 }

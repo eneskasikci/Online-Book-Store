@@ -155,7 +155,6 @@
       <DependentUpon>BookControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -228,6 +227,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\5003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\2001.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
