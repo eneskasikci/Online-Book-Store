@@ -42,12 +42,8 @@ namespace BookStore
 
         public static void LoadBooks(List<Book> booksList)
         {
-            if (!File.Exists(@"books.csv"))
-            {
-                StreamWriter create = File.CreateText(@"books.csv");
-                create.Close();
-            }
-            StreamReader reader = new StreamReader(@"books.csv");
+
+            StreamReader reader = new StreamReader("../../Content/books.csv");
             while (!reader.EndOfStream)
             {
                 string line = reader.ReadLine();
@@ -63,12 +59,7 @@ namespace BookStore
 
         public static void LoadMagazines(List<Magazine> magazineList)
         {
-            if (!File.Exists(@"magazines.csv"))
-            {
-                StreamWriter create = File.CreateText(@"magazines.csv");
-                create.Close();
-            }
-            StreamReader reader = new StreamReader(@"magazines.csv");
+            StreamReader reader = new StreamReader("../../Content/magazines.csv");
             while (!reader.EndOfStream)
             {
                 string line = reader.ReadLine();
@@ -83,12 +74,7 @@ namespace BookStore
 
         public static void LoadCDs(List<MusicCD> musicCDList)
         {
-            if (!File.Exists(@"cds.csv"))
-            {
-                StreamWriter create = File.CreateText(@"cds.csv");
-                create.Close();
-            }
-            StreamReader reader = new StreamReader(@"cds.csv");
+            StreamReader reader = new StreamReader("../../Content/cds.csv");
             while (!reader.EndOfStream)
             {
                 string line = reader.ReadLine();
